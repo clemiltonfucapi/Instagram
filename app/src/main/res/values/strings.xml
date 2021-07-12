@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Instagram</string>
-    <string name="email">email</string>
+    <string name="email">Email</string>
     <string name="enter">Entrar</string>
     <string name="or">OU</string>
     <string name="enter_with_facebook">Entrar com facebook</string>
     <string name="does_not_have_account">Não tem conta? <b><font color="#000000">Cadastre-se</font></b></string>
+    <string name="senha">Senha</string>
 </resources>
