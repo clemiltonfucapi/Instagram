@@ -57,11 +57,11 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
-            <Button
+            <com.clemilton.instagram.login.prensentation.TesteButton
                 android:id="@+id/login_button_enter"
-                style="@style/InstaFormButton"
-                android:text="@string/enter"
-                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:text="@string/enter"
                 />
 
             <FrameLayout
