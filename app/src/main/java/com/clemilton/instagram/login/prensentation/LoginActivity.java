@@ -7,16 +7,14 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.clemilton.instagram.R;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private TesteButton buttonEnter;
+    private LoadingButton buttonEnter;
 
 
     @Override
@@ -29,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         editTextEmail.addTextChangedListener(watcher);
         editTextPassword.addTextChangedListener(watcher);
 
-        buttonEnter = (TesteButton)findViewById(R.id.login_button_enter);
+        buttonEnter = (LoadingButton)findViewById(R.id.login_button_enter);
         buttonEnter.setOnClickListener( v->{
             buttonEnter.showProgress(true);
             buttonEnter.setEnabled(false);
@@ -60,9 +58,9 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
             if(!s.toString().isEmpty()){
-                findViewById(R.id.login_button_enter).setEnabled(true);
+                buttonEnter.setEnabled(true);
             }else{
-                findViewById(R.id.login_button_enter).setEnabled(false);
+                buttonEnter.setEnabled(false);
             }
         }
 

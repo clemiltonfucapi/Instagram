@@ -50,14 +50,14 @@
                 <EditText
                     android:id="@+id/login_edit_text_password"
                     style="@style/InstaFormEditText"
-                    android:hint="@string/senha"
+                    android:hint="@string/password"
                     android:inputType="textPassword"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
 
 
-            <com.clemilton.instagram.login.prensentation.TesteButton
+            <com.clemilton.instagram.login.prensentation.LoadingButton
                 android:id="@+id/login_button_enter"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
