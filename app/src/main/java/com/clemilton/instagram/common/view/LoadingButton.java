@@ -1,4 +1,4 @@
-package com.clemilton.instagram.login.prensentation;
+package com.clemilton.instagram.common.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;

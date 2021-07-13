@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.clemilton.instagram.R;
+import com.clemilton.instagram.common.view.CustomDialog;
 
 public class RegisterPhotoFragment extends Fragment {
 
@@ -23,5 +24,18 @@ public class RegisterPhotoFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_register_photo,container,false);
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        CustomDialog customDialog = new CustomDialog.Builder(getContext())
+                .setTitle(R.string.define_photo_profile)
+                .addButton( v-> {
+
+                }, R.string.take_picture,R.string.search_gallery)
+                .build();
+        customDialog.show();
+
+    }
 
 }

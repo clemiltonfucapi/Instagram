@@ -26,11 +26,19 @@
         android:text="@string/photo_register_subtitle"
         android:layout_gravity="center" />
 
-    <com.clemilton.instagram.login.prensentation.LoadingButton
+    <com.clemilton.instagram.common.view.LoadingButton
         android:id="@+id/register_button_next"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         app:text="@string/add_photo"
         />
+
+    <Button
+        android:id="@+id/register_button_jump"
+        style="@style/InstaFormButton.Link"
+        android:layout_gravity="center"
+        android:text="@string/jump"
+        android:layout_marginBottom="36dp"
+    />
 
 </LinearLayout>

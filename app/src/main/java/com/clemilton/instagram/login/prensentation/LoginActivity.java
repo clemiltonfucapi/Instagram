@@ -10,6 +10,7 @@ import android.text.TextWatcher;
 import android.widget.EditText;
 
 import com.clemilton.instagram.R;
+import com.clemilton.instagram.common.view.LoadingButton;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {

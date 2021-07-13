@@ -57,7 +57,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
-            <com.clemilton.instagram.login.prensentation.LoadingButton
+            <com.clemilton.instagram.common.view.LoadingButton
                 android:id="@+id/login_button_enter"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
