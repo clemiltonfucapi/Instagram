@@ -61,6 +61,7 @@
                 android:id="@+id/login_button_enter"
                 style="@style/InstaFormButton"
                 android:text="@string/enter"
+                android:enabled="false"
                 />
 
             <FrameLayout
